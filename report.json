@@ -1,0 +1,21 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "emp_prod",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.20.0",
+      "database": null,
+      "warnings": [
+        "outOfOrder mode is active. Migration of schema `emp_prod` may not be reproducible."
+      ],
+      "timestamp": "2023-07-06T13:35:28.967825500",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
