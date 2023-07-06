@@ -1,0 +1,39 @@
+table "emp"."employees" {
+  columns = (
+    column "emp_no" {
+      type = int
+      null = NOT NULL
+    }
+    column "birth_date" {
+      type = date
+      null = NOT NULL
+    }
+    column "first_name" {
+      type = varchar(14)
+      null = NOT NULL
+    }
+    column "last_name" {
+      type = varchar(16)
+      null = NOT NULL
+    }
+    column "gender" {
+      type = enum('M','F')
+      null = NOT NULL
+    }
+    column "hire_date" {
+      type = date
+      null = NOT NULL
+    }
+    column "middle_name" {
+      type = varchar(45)
+    }
+  )
+  primaryKey = {
+    columns = [
+      emp_no
+    ]
+    name = "PRIMARY"
+    objectType = primaryKey
+  }
+}
+

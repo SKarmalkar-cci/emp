@@ -1,0 +1,10 @@
+procedure "emp"."get_employees" {
+  parameters = [
+  ]
+  text = """-
+BEGIN
+select * from employees;
+END
+"""
+}
+
