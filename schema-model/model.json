@@ -3,7 +3,7 @@
   "database-properties": {
     "database-version": "8.0.23",
     "database-flavor": "mysql",
-    "model-version": "1.0"
+    "model-version": "1.1"
   },
   "model-format": "rgmf"
 }

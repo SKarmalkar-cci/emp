@@ -1,0 +1,50 @@
+{
+  "version": "2.0",
+  "name": "emp",
+  "id": "08c1f692-e4d1-4fc6-aef2-40f2bbb1fc20",
+  "databaseType": "MySql",
+  "development": {
+    "scriptsFolder": "./schema-model"
+  },
+  "deployment": {
+    "flywayConfFiles": [
+      "./flyway.conf"
+    ],
+    "shadowDatabase": {
+      "connectionProvider": {
+        "type": "UsernamePassword",
+        "url": "jdbc:mysql://localhost:3307"
+      },
+      "schema": "emp_shadow",
+      "displayName": "Shadow database"
+    },
+    "generateUndoScripts": true,
+    "targetDatabases": [
+      {
+        "connectionProvider": {
+          "type": "UsernamePassword",
+          "url": "jdbc:mysql://localhost:3307",
+          "username": "root",
+          "password": {
+            "secretType": "DefaultSecretStore",
+            "name": "Flyway Desktop a1a7b2d1-7ac6-447f-b9ea-a47013cf9850"
+          }
+        },
+        "schemas": [
+          "emp_prod"
+        ],
+        "displayName": "prod"
+      }
+    ]
+  },
+  "developmentDatabase": {
+    "connectionProvider": {
+      "type": "UsernamePassword",
+      "url": "jdbc:mysql://localhost:3307"
+    },
+    "displayName": "Development database"
+  },
+  "schemas": [
+    "emp"
+  ]
+}
