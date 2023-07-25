@@ -3,7 +3,7 @@ procedure "emp"."get_employees" {
   ]
   text = """-
 BEGIN
-select * from employees;
+select 2 from employees;
 END
 """
 }
