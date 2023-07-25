@@ -27,6 +27,12 @@ table "emp"."staff" {
     column "middle_name" {
       type = varchar(45)
     }
+    column "address1" {
+      type = varchar(45)
+    }
+    column "address2" {
+      type = varchar(45)
+    }
   )
   primaryKey = {
     columns = [
